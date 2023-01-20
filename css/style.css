@@ -1,0 +1,29 @@
+body{
+    background-color: aqua;
+    margin: 0;
+}
+.container{
+    background-color: blue;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr 1fr;
+    grid-template-rows: 1fr 5fr 1fr 1fr;
+    gap: 5px; /*marco entre celdas*/
+}
+.box{
+    background-color: blueviolet;
+    color: white;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.box1{
+    grid-column: 1 / 5; /*desde la columna 1 a la columna 5*/
+}
+.box2{
+    grid-row: 2 / 4; /*desde la linea 2 a la linea 4 */
+}
+.box3{
+    grid-column: 2 / 5; /*desde la linea 2 a la linea 5*/
+}
